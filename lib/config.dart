@@ -1,8 +1,8 @@
 final List results = [
-  "WAITING DATA",
-  "THINNESS",
-  "NORMAL",
-  "OVERWEIGHT",
-  "OBESE",
-  "VERY OBESE"
+  'WAITING DATA',
+  'THINNESS',
+  'NORMAL',
+  'OVERWEIGHT',
+  'OBESE',
+  'VERY OBESE'
 ];

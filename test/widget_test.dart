@@ -19,13 +19,13 @@ void main() {
       child: const MyApp(),
     ));
 
-    expect(find.text("Please, enter the weight!"), findsNothing);
+    expect(find.text('Please, enter the weight!'), findsNothing);
     await tester.tap(find.byType(ElevatedButton));
     await tester.pump();
-    expect(find.text("Please, enter the weight!"), findsOneWidget);
+    expect(find.text('Please, enter the weight!'), findsOneWidget);
 
-    await tester.enterText(find.byType(TextFormField).first, "55.0");
-    await tester.enterText(find.byType(TextFormField).last, "1.79");
+    await tester.enterText(find.byType(TextFormField).first, '55.0');
+    await tester.enterText(find.byType(TextFormField).last, '1.79');
     await tester.tap(find.byType(ElevatedButton));
     await tester.pumpAndSettle();
 
