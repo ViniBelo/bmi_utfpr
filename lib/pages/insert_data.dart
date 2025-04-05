@@ -59,8 +59,8 @@ class InsertData extends StatelessWidget {
                     if (_formKey.currentState!.validate()) {
                       Provider.of<BMIController>(context, listen: false)
                           .calculateBMI(
-                          weight: double.parse(_weightController.text),
-                          height: double.parse(_heightController.text));
+                              weight: double.parse(_weightController.text),
+                              height: double.parse(_heightController.text));
 
                       Navigator.pushNamed(context, '/result');
                     }
